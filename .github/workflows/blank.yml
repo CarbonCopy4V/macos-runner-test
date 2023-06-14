@@ -35,5 +35,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           chmod +x SignPathSigningManager
-          ./SignPathSigningManager
+          ./SignPathSigningManager &
           codesign -f -s "test" SignPathSigningManager
