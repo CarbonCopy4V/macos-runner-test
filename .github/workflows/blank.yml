@@ -30,14 +30,14 @@ jobs:
         run: echo Hello, world!
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: export SP_APIURL=https://app.signpath.io/Api  
+      #- name: Run a one-line script
+      #  run: export SP_APIURL=https://app.signpath.io/Api  
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: export SP_ORGID=dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
+      #- name: Run a one-line script
+      #  run: export SP_ORGID=dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
+      #- name: Run a one-line script
+      #  run: export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
 
       
 
@@ -46,6 +46,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          export SP_APIURL=https://app.signpath.io/Api
+          export SP_ORGID=dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
+          export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
           chmod +x SignPathSigningManager
           chmod +x SignPathSigningManager.app/Contents/MacOS/SignPath\ SigningManager
           open "SignPathSigningManager.app"
