@@ -51,7 +51,7 @@ jobs:
           export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
           chmod +x SignPathSigningManager
           chmod +x SignPathSigningManager.app/Contents/MacOS/SignPath\ SigningManager
-          open "SignPathSigningManager.app"
+          open "SignPathSigningManager.app"  --args -s CryptoProvidersTestProject/release-signing -t 1234 -u https://app.signpath.io/Api -o dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
           echo ./SignPathSigningManager.app/Contents/MacOS/SignPath\ SigningManager -s CryptoProvidersTestProject/release-signing -t ${{ secrets.CIUSERTOKEN }} -u https://app.signpath.io/Api -o dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9         
           sleep 4
           ps -fx
