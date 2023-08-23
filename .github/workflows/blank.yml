@@ -29,6 +29,18 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: export SP_APIURL=https://app.signpath.io/Api  
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: export SP_ORGID=dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
+
+      
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
