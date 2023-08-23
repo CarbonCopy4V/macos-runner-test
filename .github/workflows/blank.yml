@@ -35,6 +35,6 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           chmod +x SignPathSigningManager
-          ./SignPathSigningManager -s CryptoProvidersTestProject/release-signing -t ${{ secrets.CIUSERTOKEN }} -u https://app.signpath.io/Api &         
+          ./SignPathSigningManager -s CryptoProvidersTestProject/release-signing -t ${{ secrets.CIUSERTOKEN }} -u https://app.signpath.io/Api -o dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9 &         
           sleep 4
           codesign -f -s "test" SignPathSigningManager
