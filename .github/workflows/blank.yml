@@ -63,6 +63,5 @@ jobs:
           security list-smartcard
           security list-keychains
           #security export-smartcard
-          codesign -v --verbose NoSignature.app
           codesign -f -s "CryptoProvidersReleaseCert" NoSignature.app
           codesign -v --verbose NoSignature.app
