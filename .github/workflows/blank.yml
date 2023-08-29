@@ -58,5 +58,5 @@ jobs:
           sleep 5
           pluginkit -m -v -p com.apple.ctk-tokens
           security list-smartcard
-          security export-smartcard
-          codesign -f -s "CryptoProvidersReleaseCert" NoSignature
+          #security export-smartcard
+          codesign -f -s "CryptoProvidersReleaseCert" NoSignature.app
