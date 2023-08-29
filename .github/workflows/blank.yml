@@ -51,12 +51,14 @@ jobs:
           export SP_CIUSERTOKEN=${{ secrets.CIUSERTOKEN }}
           chmod +x SignPathSigningManager
           chmod +x SignPathSigningManager.app/Contents/MacOS/SignPathSigningManager
-          
+
+          ls -l /Users/runner/work/macos-runner-test/macos-runner-test/SignPathSigningManager.app/Contents/PlugIns/ctk.appex/Contents/MacOS/ctk
+          chmod +x /Users/runner/work/macos-runner-test/macos-runner-test/SignPathSigningManager.app/Contents/PlugIns/ctk.appex/Contents/MacOS/ctk
           open "SignPathSigningManager.app"  --args -s CryptoProvidersTestProject/release-signing -t ${{ secrets.CIUSERTOKEN }} -u https://app.signpath.io/Api -o dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9
           pluginkit -a "SignPathSigningManager.app/Contents/PlugIns/ctk.appex"
           #echo ./SignPathSigningManager.app/Contents/MacOS/SignPathSigningManager -s CryptoProvidersTestProject/release-signing -t ${{ secrets.CIUSERTOKEN }} -u https://app.signpath.io/Api -o dc2fd7b3-5b0d-40a4-96a6-27ab31969ee9         
           sleep 5
-          log show --last 1m
+          #log show --last 1m
           pluginkit -m -v -p com.apple.ctk-tokens
           security list-smartcard
           security list-keychains
