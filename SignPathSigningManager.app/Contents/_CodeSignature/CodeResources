@@ -14,7 +14,7 @@
 		</data>
 		<key>Resources/Base.lproj/MainMenu.nib</key>
 		<data>
-		3VitvdqKnOpO9QNLYBkcN38Z5c0=
+		GuYTWQRY/XYl6REUCVA2cFvHFW4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			lYLGEIhcmoLK6S6neBHRnCSulBY=
+			59CPhYs95bu6OhWO+PSlQrdaJXk=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"9582c610885c9a82cae92ea77811d19c24ae9416" or cdhash H"21fa9d0ea1f7dde859625a2a33f2c3ba167de8cb"</string>
+			<string>identifier "io.signpath.apps.SignPathSM.ctk" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: robert.benak@gmail.com (PF363EW2RN)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
 		</dict>
 		<key>Resources/AppIcon.icns</key>
 		<dict>
@@ -46,7 +46,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YarRQJ16lhBUsunFzRNjQ5RrZZl8Eks8cxpRfJZ9T0w=
+			hFBwq9iqSb3KOGTjKx6EnKcnCwVzYKrhPA0B5VtnU34=
 			</data>
 		</dict>
 	</dict>

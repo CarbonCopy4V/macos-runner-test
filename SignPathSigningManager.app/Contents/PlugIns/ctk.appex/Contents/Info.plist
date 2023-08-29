@@ -11,7 +11,7 @@
 	<key>CFBundleExecutable</key>
 	<string>ctk</string>
 	<key>CFBundleIdentifier</key>
-	<string>io.signpath.apps.SignPathTestC.ctk</string>
+	<string>io.signpath.apps.SignPathSM.ctk</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -49,7 +49,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>com.apple.ctk.class-id</key>
-			<string>io.signpath.apps.SignPathTestC.ctk</string>
+			<string>io.signpath.apps.SignPathSM.ctk</string>
 			<key>com.apple.ctk.driver-class</key>
 			<string>ctk.TokenDriver</string>
 		</dict>
